@@ -1,0 +1,41 @@
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background: transparent;
+}
+
+.connect-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  justify-content: space-between;
+
+}
+
+.connect-wrapper:hover {
+  background: rgb(54, 54, 54);
+}
+
+.connect-wrapper img {
+  margin-right: 10px; 
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+.connect-button {
+  background-color: transparent;
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* .connect-button:hover {
+  color: #ccc;
+} */
