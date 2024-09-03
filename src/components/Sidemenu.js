@@ -26,7 +26,7 @@ export default function Sidemenu() {
 
   return (
     <>
-      <button className='btn btn-sm clchn ms-3 d-inline-block d-sm-none' onClick={handleToggle}>
+      <button className='btn btn-sm clchn ms-3 d-inline-block d-sm-none'  onClick={handleToggle}>
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className={`sidemenu fixed-top ${isToggled ? 'active' : ''}`}>
