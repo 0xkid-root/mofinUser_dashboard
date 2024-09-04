@@ -33,6 +33,7 @@ function App() {
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
+  //  all code of logic is here
   useEffect(() => {
     if (ready) {
       if (authenticated && user?.wallet?.address) {
