@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@alchemy/aa-accounts": "^3.19.0",
+    "@alchemy/aa-alchemy": "^3.19.0",
+    "@alchemy/aa-core": "^3.19.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -10,7 +13,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^6.0.1",
     "@mui/material": "^6.0.1",
-    "@privy-io/react-auth": "^1.81.1",
+    "@privy-io/react-auth": "^1.81.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -21,6 +24,7 @@
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.5",
+    "viem": "^2.19.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

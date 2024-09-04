@@ -10,6 +10,7 @@ import LogOut from '../assets/images/logout.svg';
 import { usePrivy } from "@privy-io/react-auth";
 import { Link } from 'react-router-dom';
 
+
 export default function Sidemenu() {
   const { logout, ready, authenticated } = usePrivy();
   const [isToggled, setIsToggled] = useState(false);
@@ -22,6 +23,7 @@ export default function Sidemenu() {
   const handleLogout = (event) => {
     event.preventDefault();
     logout();
+
   };
 
   return (
@@ -39,7 +41,7 @@ export default function Sidemenu() {
           <li><Link to='#'> <img src={Settings} alt="Settings" /> <span>Settings</span></Link></li>
           <li><Link to='/profile'> <img src={user} alt="Profile" /> <span>Profile</span></Link></li>
           <li className='mt-auto'>
-            <Link to='' onClick={handleLogout}>
+            <Link to='/' onClick={handleLogout}>
               <img src={LogOut} alt="Log Out" /> <span>Log Out</span>
             </Link>
           </li>
