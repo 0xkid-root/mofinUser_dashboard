@@ -32,8 +32,8 @@ function App() {
   const location = useLocation();
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isModalShown, setIsModalShown] = useState(false); // New state to track if modal has been shown
 
-  //  all code of logic is here
   useEffect(() => {
     if (ready) {
       if (authenticated && user?.wallet?.address) {
@@ -47,8 +47,17 @@ function App() {
           if (location.pathname === "/" || location.pathname === "/welcome") {
             navigate("/user", { replace: true });
           }
-          if (currentUser.isSmartAccount === "false") {
-            setShowModal(true);
+
+          // Only open modal if user is on /user route, isSmartAccount is false, and the modal hasn't been shown yet
+          if (
+            location.pathname === "/user" &&
+            currentUser.isSmartAccount === "false" &&
+            !isModalShown
+          ) {
+            setTimeout(() => {
+              setShowModal(true);
+              setIsModalShown(true); // Mark the modal as shown
+            }, 5000); // 5-second delay
           }
         } else {
           setIsWhitelisted(false);
@@ -61,7 +70,7 @@ function App() {
         }
       }
     }
-  }, [ready, authenticated, user, navigate, location.pathname]);
+  }, [ready, authenticated, user, navigate, location.pathname, isModalShown]);
 
   if (!ready) {
     return (
@@ -164,7 +173,7 @@ function App() {
       <SmartAccountModal
         show={showModal}
         onClose={() => setShowModal(false)}
-        title="Smart Account "
+        title="Smart Account"
         content="Your account type is not supported."
       />
     </React.Fragment>
@@ -178,3 +187,6 @@ export default function WrappedApp() {
     </Router>
   );
 }
+
+
+
