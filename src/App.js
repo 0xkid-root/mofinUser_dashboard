@@ -56,8 +56,8 @@ function App() {
           ) {
             setTimeout(() => {
               setShowModal(true);
-              setIsModalShown(true); // Mark the modal as shown
-            }, 5000); // 5-second delay
+              setIsModalShown(true);
+            }, 5000); 
           }
         } else {
           setIsWhitelisted(false);
