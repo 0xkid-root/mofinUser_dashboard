@@ -32,7 +32,7 @@ function App() {
   const location = useLocation();
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [isModalShown, setIsModalShown] = useState(false); // New state to track if modal has been shown
+  const [isModalShown, setIsModalShown] = useState(false); 
 
   useEffect(() => {
     if (ready) {
