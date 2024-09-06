@@ -69,7 +69,7 @@ const WelcomePage = () => {
         <span className="note">Note:</span> Sofin will never ask for your private key.
       </p>
 
-      <ToastContainer autoClose={2000} /> 
+      <ToastContainer autoClose={2000}  hideProgressBar={true} /> 
     </div>
   );
 };

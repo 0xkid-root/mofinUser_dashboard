@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Value from "../assets/images/Value.png";
 import ROI from "../assets/images/roi.png";
 import Invested from "../assets/images/Invested.png";
@@ -15,6 +15,7 @@ import anon from "../assets/images/asset2.png";
 import gr from "../assets/images/gr.png";
 
 import { usePrivy } from "@privy-io/react-auth";
+import PerformanceChart from "./charts/PerformanceChart";
 
 
 export default function Workarea() {
@@ -26,12 +27,35 @@ export default function Workarea() {
     if (!address) return '';
     return `${address.slice(0, 5)}...${address.slice(-6)}`;
   };
+
+
+  const [chartSize, setChartSize] = useState({ width: "100%", height: 400 });
+  const chartContainerRef = useRef(null);
+
+  useEffect(() => {
+    const updateChartSize = () => {
+      if (chartContainerRef.current) {
+        const containerWidth = chartContainerRef.current.offsetWidth;
+        const increasedWidth = containerWidth * 2.05; 
+        const newHeight = containerWidth < 576 ? 250 : containerWidth < 768 ? 300 : 400;
+        setChartSize({ width: `${increasedWidth}px`, height: newHeight });
+      }
+    };
+  
+    updateChartSize();
+    window.addEventListener("resize", updateChartSize);
+  
+    return () => {
+      window.removeEventListener("resize", updateChartSize);
+    };
+  }, []);
+  
+
   return (
     <div className="main-container">
       <h4 className="text-black mb-4 d-blovk d-lg-none">
         Welcome Back,{formatAddress(user?.wallet?.address)} 
       </h4>
-
 
       <div className="row">
 
@@ -109,9 +133,13 @@ export default function Workarea() {
             
             <div className="col-md-12 mb-4">
               <div className="chartmain">
-                {/** <h4 className='text-black mb-4'>Performance Graph</h4>
+                {/* <h4 className='text-black mb-4'>Performance Graph</h4>
+                  <img className="w-100" src={gr}></img>
+
                  */}
-                <img className="w-100" src={gr}></img>
+
+                <PerformanceChart chartSize={chartSize} />
+
               </div>
             </div>
           </div>
