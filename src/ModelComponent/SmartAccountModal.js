@@ -19,6 +19,7 @@ import { useWallets } from "@privy-io/react-auth";
 import { abi } from "./InteractionJson.js";
 
 const SmartAccountModal = ({ show, onClose, title, content }) => {
+
   const contractAddress = "0x053a63d4202721f9155d8adbfa52f257b5e1776d";
   const { wallets } = useWallets();
   const [smartAccountClient, setSmartAccountClient] = useState(null);
@@ -101,6 +102,7 @@ const SmartAccountModal = ({ show, onClose, title, content }) => {
       setLoading(false);
     }
   }
+  
 
   return (
     <Modal show={show} onHide={onClose} centered>
