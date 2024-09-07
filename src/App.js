@@ -38,9 +38,7 @@ function App() {
     if (ready) {
       if (authenticated && user?.wallet?.address) {
         const currentUser = users.find(
-          (u) =>
-            u?.address?.toLowerCase() === user?.wallet?.address?.toLowerCase()
-        );
+          (u) =>u?.address?.toLowerCase() === user?.wallet?.address?.toLowerCase());
 
         if (currentUser && currentUser.isWhitelist === "true") {
           setIsWhitelisted(true);
@@ -48,7 +46,7 @@ function App() {
             navigate("/user", { replace: true });
           }
 
-          // Only open modal if user is on /user route, isSmartAccount is false, and the modal hasn't been shown yet
+          // Only open modal if user is on /user route, isSmartAccount is false, and the modal hasn't been shown...
           if (
             location.pathname === "/user" &&
             currentUser.isSmartAccount === "false" &&

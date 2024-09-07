@@ -8,7 +8,7 @@ export const users = [
     { address: "0x094365ea4484E2A0077b157e0972149F0C9A10c9", isWhitelist: "true",isSmartAccount:"false" },
     { address: "0x8B92f9628990353A1ef994aE77c8ab45d2b99AF9", isWhitelist: "false",isSmartAccount:"false" },
     { address: "0xE917CBFd0349db369E1d6A0Ccd1449ad365C74D4", isWhitelist: "true",isSmartAccount:"false" },
-    { address: "0xBFf3c5ec8b0d983Ec7d10350F7B837Ed632b912c", isWhitelist: "false",isSmartAccount:"false" },
+    { address: "0xBFf3c5ec8b0d983Ec7d10350F7B837Ed632b912c", isWhitelist: "true",isSmartAccount:"false" },
   ];
 //   "0x094365ea4484E2A0077b157e0972149F0C9A10c9"
 // 0xBFf3c5ec8b0d983Ec7d10350F7B837Ed632b912c
