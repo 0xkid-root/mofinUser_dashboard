@@ -25,6 +25,7 @@ import LoadingComponent from "./components/LoadingPage/LoadingComponent";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import { users } from "./UserRoles";
 import SmartAccountModal from "./ModelComponent/SmartAccountModal";
+import HeroSection from "./components/PrivyLogin/HeroSection";
 
 function App() {
   const { ready, authenticated, user } = usePrivy();

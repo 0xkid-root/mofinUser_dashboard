@@ -1,41 +1,84 @@
+/* General styles for navbar */
 .navbar-container {
   display: flex;
-  justify-content: flex-end;
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
   background: transparent;
+  position: relative;
+}
+
+
+.logo-wrapper .company-logo {
+  width: 150px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Menu buttons */
+.buttons-wrapper {
+  display: flex;
+  gap: 15px;
 }
 
 .connect-wrapper {
   display: flex;
   align-items: center;
-  background-color: #000;
-  padding: 10px 30px;
-  border-radius: 7px;
+  background-color: #FFDE02;
+  padding: 13px 30px;
+  border-radius: 8px;
   cursor: pointer;
-  justify-content: space-between;
-
 }
+.connect-wrapper:hover{
+  background-color: #f6db2b;
 
-.connect-wrapper:hover {
-  background: rgb(54, 54, 54);
 }
 
 .connect-wrapper img {
-  margin-right: 10px; 
+  margin-right: 10px;
   width: 25px;
   height: 25px;
-  filter: invert(100%);
 }
 
 .connect-button {
   background-color: transparent;
-  color: #fff; 
+  color: black;
   border: none;
   cursor: pointer;
   font-size: 18px;
-  transition: color 0.3s ease;
+  font-family: 'sans-serif';
 }
 
-/* .connect-button:hover {
-  color: #ccc;
-} */
+
+.buttons-wrapper {
+  display: flex;
+}
+
+.buttons-wrapper.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  /* background-color: #fff; */
+  padding: 10px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .buttons-wrapper {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .buttons-wrapper.show {
+    display: flex;
+  }
+}
