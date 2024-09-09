@@ -33,13 +33,15 @@ function App() {
   const location = useLocation();
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [isModalShown, setIsModalShown] = useState(false); 
+  const [isModalShown, setIsModalShown] = useState(false);
 
   useEffect(() => {
     if (ready) {
       if (authenticated && user?.wallet?.address) {
         const currentUser = users.find(
-          (u) =>u?.address?.toLowerCase() === user?.wallet?.address?.toLowerCase());
+          (u) =>
+            u?.address?.toLowerCase() === user?.wallet?.address?.toLowerCase()
+        );
 
         if (currentUser && currentUser.isWhitelist === "true") {
           setIsWhitelisted(true);
@@ -47,7 +49,6 @@ function App() {
             navigate("/user", { replace: true });
           }
 
-          // Only open modal if user is on /user route, isSmartAccount is false, and the modal hasn't been shown...
           if (
             location.pathname === "/user" &&
             currentUser.isSmartAccount === "false" &&
@@ -56,7 +57,7 @@ function App() {
             setTimeout(() => {
               setShowModal(true);
               setIsModalShown(true);
-            }, 5000); 
+            }, 5000);
           }
         } else {
           setIsWhitelisted(false);
@@ -70,6 +71,9 @@ function App() {
       }
     }
   }, [ready, authenticated, user, navigate, location.pathname, isModalShown]);
+
+  // Conditionally render the ParticlesComponent based on the current route
+  const showParticles = location.pathname !== "/";
 
   if (!ready) {
     return (
@@ -86,16 +90,15 @@ function App() {
           zIndex: 9999,
         }}
       >
-        <ParticlesComponent />
-        <LoadingComponent />
+      <ParticlesComponent />
+      <LoadingComponent />
       </div>
     );
   }
 
   return (
     <React.Fragment>
-    {/*      <ParticlesComponent />
- */}
+      {showParticles && <ParticlesComponent />}
       <Routes>
         {isWhitelisted ? (
           <>
@@ -187,6 +190,3 @@ export default function WrappedApp() {
     </Router>
   );
 }
-
-
-
