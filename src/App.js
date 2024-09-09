@@ -94,7 +94,8 @@ function App() {
 
   return (
     <React.Fragment>
-      <ParticlesComponent />
+    {/*      <ParticlesComponent />
+ */}
       <Routes>
         {isWhitelisted ? (
           <>
