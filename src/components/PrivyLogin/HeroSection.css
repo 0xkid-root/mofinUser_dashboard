@@ -1,6 +1,6 @@
 .hero-section {
   position: relative; 
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@
 }
 
 .hero-button {
-  padding: 18px 42px;
+  padding: 15px 38px;
   background-color: #FFDE02;
   color: #000;
   border: none;
