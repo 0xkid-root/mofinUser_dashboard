@@ -2,7 +2,7 @@ import React from "react";
 import { usePrivy } from "@privy-io/react-auth";
 import "./NavbarSection.css";
 import WalletLoginIcon from "../../assets/images/WalletLoginIcon.svg";
-import Logo from "../../assets/images/logo_dark.svg";
+import Logo from "../../assets/images/sofinYellow.png";
 import HeroSection from "./HeroSection";
 import LoginCardSection from "./LoginCardSection";
 
