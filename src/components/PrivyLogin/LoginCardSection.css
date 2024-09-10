@@ -3,6 +3,7 @@
   justify-content: center; 
   flex-wrap: wrap;
   gap: 16px; 
+  z-index: 2;
 }
 
 .card-item {

@@ -4,6 +4,17 @@
   align-items: center;
   background: transparent;
   position: relative;
+  padding-top:40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.mainDiv{
+  background-color:white;
+  padding: 0;
+  margin-right: -40px;
+  margin-bottom: -40px;
+  margin-left: -40px;
+  margin-top: -40px;
 }
 
 .logo-wrapper .company-logo {

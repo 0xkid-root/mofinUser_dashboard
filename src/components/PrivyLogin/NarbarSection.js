@@ -10,7 +10,7 @@ const NavbarSection = () => {
   const { login } = usePrivy();
 
   return (
-    <div>
+    <div className="mainDiv">
       <div className="navbar-container">
         <div className="logo-wrapper">
           <img src={Logo} alt="Company Logo" className="company-logo" />

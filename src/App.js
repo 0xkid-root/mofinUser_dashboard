@@ -72,7 +72,6 @@ function App() {
     }
   }, [ready, authenticated, user, navigate, location.pathname, isModalShown]);
 
-  // Conditionally render the ParticlesComponent based on the current route
   const showParticles = location.pathname !== "/";
 
   if (!ready) {
