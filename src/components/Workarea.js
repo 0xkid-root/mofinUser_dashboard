@@ -7,7 +7,6 @@ import shiba from "../assets/images/shiba.png"
 import ethereum from "../assets/images/ethereum.png";
 import solana from "../assets/images/solona.png";
 import tether from "../assets/images/tether.png";
-
 import Socal from "../assets/images/socal.png";
 import Anon from "../assets/images/asset.png";
 import anam from "../assets/images/asset1.png";
@@ -16,6 +15,7 @@ import gr from "../assets/images/gr.png";
 
 import { usePrivy } from "@privy-io/react-auth";
 import PerformanceChart from "./charts/PerformanceChart";
+import {formatAddress} from '../utils/AddressFormat'
 
 
 export default function Workarea() {
@@ -23,10 +23,7 @@ export default function Workarea() {
   const {user} = usePrivy();
   // console.log("user is here:",user);
 
-  const formatAddress = (address) => {
-    if (!address) return '';
-    return `${address.slice(0, 5)}...${address.slice(-6)}`;
-  };
+
 
 
   const [chartSize, setChartSize] = useState({ width: "100%", height: 400 });

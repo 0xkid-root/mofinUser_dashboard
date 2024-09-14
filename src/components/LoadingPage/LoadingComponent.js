@@ -5,10 +5,9 @@ const LoadingComponent = () => {
   return (
     <Container
       className="d-flex justify-content-center align-items-center"
-      style={{ height: '100vh' }}
-    >
-      <Spinner animation="border"  role="status" size="lg">
-      </Spinner>
+      style={{ height: '100vh' }}>
+      
+      <Spinner animation="border"  role="status" size="lg"></Spinner>
     </Container>
   );
 };

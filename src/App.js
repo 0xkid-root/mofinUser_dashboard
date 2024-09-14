@@ -25,7 +25,6 @@ import LoadingComponent from "./components/LoadingPage/LoadingComponent";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import { users } from "./UserRoles";
 import SmartAccountModal from "./ModelComponent/SmartAccountModal";
-import HeroSection from "./components/PrivyLogin/HeroSection";
 
 function App() {
   const { ready, authenticated, user } = usePrivy();
@@ -34,6 +33,7 @@ function App() {
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isModalShown, setIsModalShown] = useState(false);
+  const [loading, setLoading] = useState(true); // Loading state to handle transitions
 
   useEffect(() => {
     if (ready) {
@@ -46,6 +46,7 @@ function App() {
         if (currentUser && currentUser.isWhitelist === "true") {
           setIsWhitelisted(true);
           if (location.pathname === "/" || location.pathname === "/welcome") {
+            setLoading(false); // Set loading to false before navigating
             navigate("/user", { replace: true });
           }
 
@@ -57,24 +58,28 @@ function App() {
             setTimeout(() => {
               setShowModal(true);
               setIsModalShown(true);
-            }, 5000);
+            }, 4000);
           }
         } else {
           setIsWhitelisted(false);
+          setLoading(false); // Ensure loading is false before navigating
           navigate("/welcome", { replace: true });
         }
       } else {
         setIsWhitelisted(false);
         if (location.pathname === "/welcome" && location.pathname !== "/") {
+          setLoading(false);
           navigate("/", { replace: true });
         }
       }
+      setLoading(false); // Ensure loading is turned off once checks are done
     }
   }, [ready, authenticated, user, navigate, location.pathname, isModalShown]);
 
   const showParticles = location.pathname !== "/";
 
-  if (!ready) {
+  // Show loading screen until authentication and whitelist status are fully checked
+  if (loading || !ready) {
     return (
       <div
         style={{
@@ -89,8 +94,8 @@ function App() {
           zIndex: 9999,
         }}
       >
-      <ParticlesComponent />
-      <LoadingComponent />
+        <ParticlesComponent />
+        <LoadingComponent />
       </div>
     );
   }

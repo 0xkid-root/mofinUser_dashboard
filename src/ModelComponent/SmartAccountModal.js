@@ -8,7 +8,6 @@ import { WalletClientSigner } from "@alchemy/aa-core";
 import { sepolia } from "@alchemy/aa-core";
 import { useWallets } from "@privy-io/react-auth";
 import { abi } from "./InteractionJson.js";
-import { Link } from "react-router-dom";
 
 const SmartAccountModal = ({ show, onClose, title }) => {
   const contractAddress = "0x053a63d4202721f9155d8adbfa52f257b5e1776d";
