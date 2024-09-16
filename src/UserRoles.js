@@ -10,9 +10,11 @@ export const users = [
     { address: "0xE917CBFd0349db369E1d6A0Ccd1449ad365C74D4", isWhitelist: "true",isSmartAccount:"false" },
     { address: "0xBFf3c5ec8b0d983Ec7d10350F7B837Ed632b912c", isWhitelist: "true",isSmartAccount:"false" },
     { address: "0x7bd9e3ef01f51E7A635f3E2561D57764397Da179", isWhitelist: "true",isSmartAccount:"false" },
+    { address: "0x6CF41c181AF032E13C7E561F742346F092E7AcFF", isWhitelist: "true",isSmartAccount:"false" },
 
   ];
 //   "0x094365ea4484E2A0077b157e0972149F0C9A10c9"
 // 0xBFf3c5ec8b0d983Ec7d10350F7B837Ed632b912c
 //0xca25fDa751d83485d40aAc8644E3Ff8211322356
 //0x7bd9e3ef01f51E7A635f3E2561D57764397Da179
+//0x6CF41c181AF032E13C7E561F742346F092E7AcFF
