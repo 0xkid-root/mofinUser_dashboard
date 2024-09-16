@@ -155,6 +155,7 @@ export default function Workarea() {
                 <div className="imge1">
                   <img src={bitcoin}></img>
                 </div>
+
                 <div className="name">Bitcoin</div>
                 <div className="amount ms-auto">$2,000</div>
               </div>
@@ -173,6 +174,7 @@ export default function Workarea() {
                 <span>71,68%</span>
               </div>
             </div>
+
 
             <div className="findlist">
               <div className="fundimg">
@@ -269,6 +271,8 @@ export default function Workarea() {
 
             <button className="btn viewall w-100">View All</button>
           </div>
+
+          
 
 
           <div className="fundallocation mb-4 text-center">

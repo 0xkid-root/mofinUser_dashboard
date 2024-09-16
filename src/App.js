@@ -16,7 +16,8 @@ import ProtectedRoute from "./auth/ProtectedRoute";
 import { usePrivy } from "@privy-io/react-auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/style.css";
-import MarketSection from "./components/Pages/MarketSection";
+import MarketSection from "./components/Pages/marketPage/MarketSection";
+import MarketSubChild from "./components/Pages/marketPage/MarketSubChild";
 import WalletSection from "./components/Pages/WalletSection";
 import StackingSection from "./components/Pages/StackingSection";
 import LoansSection from "./components/Pages/LoansSection";
@@ -25,6 +26,7 @@ import LoadingComponent from "./components/LoadingPage/LoadingComponent";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import { users } from "./UserRoles";
 import SmartAccountModal from "./ModelComponent/SmartAccountModal";
+
 
 function App() {
   const { ready, authenticated, user } = usePrivy();
@@ -123,6 +125,16 @@ function App() {
                   <Header />
                   <Sidemenu />
                   <MarketSection />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/marketchild"
+              element={
+                <ProtectedRoute>
+                  <Header />
+                  <Sidemenu />
+                  <MarketSubChild />
                 </ProtectedRoute>
               }
             />
