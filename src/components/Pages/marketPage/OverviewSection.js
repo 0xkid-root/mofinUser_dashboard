@@ -103,7 +103,7 @@ const OverviewSection = () => {
           fontWeight: 'semibold',
         },
         '& .Mui-selected': {
-          color: 'black',
+          color: 'black !important',
           fontWeight: 'bold',
         },
         '& .MuiTabs-indicator': {

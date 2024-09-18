@@ -89,18 +89,21 @@
 }
 
 .rightSideTitle {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: bold;
     margin-bottom: 8px;
     font-family: 'Roboto';
     height: fit-content;
+    flex-wrap: nowrap;
 }
+
 
 .rightSideAction {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
+
 
 .buttonStyle {
     display: flex;
@@ -122,6 +125,7 @@
     height: fit-content;
     font-family: 'Roboto';
     gap: 5px;
+    font-size: 10px;
 }
 
 .cloneButton {
@@ -138,6 +142,7 @@
     align-items: center;
     font-family: 'Roboto';
     gap: 5px;
+    font-size: 10px;
 }
 .managerNameContainer {
     display: flex;
@@ -259,12 +264,13 @@
 }
 
 .findlistAsset .progressbar span {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     color: rgba(0, 0, 0, 1);
     position: absolute;
     right: 0;
     top: -8px;
+    font-family: "Inter", sans-serif;
 }
 
 .hr-container {
@@ -275,7 +281,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 43%;
+    left: 42%;
     transform: translateX(-50%);
 }
 
@@ -293,7 +299,7 @@
     }
 
     .watchlistButton {
-        padding: 1px 10px;
+        padding: 6px 10px;
     }
     .leftImageSection {
         max-width: 100%;
@@ -301,7 +307,8 @@
     }
 
     .rightSideSection {
-        margin-left: 0;
+        width: 100%;
+        margin-left: 0px !important;
     }
 
     .fundallocationAsset {

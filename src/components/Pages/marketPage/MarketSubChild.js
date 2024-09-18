@@ -17,15 +17,18 @@ const MarketSubChild = () => {
   return (
     <div className="main-container">
       <div className="main-content mb-3">
-      
+
         <div className="leftImageSection">
           <img className="assetImage" src={image1} alt="assets images" />
         </div>
 
         <div className="rightSideSection">
+
           <div className="headerSection">
+
             <div className="rightSideAction">
-              <div>
+
+              <div >
                 <p className="rightSideTitle">
                   BNB, ETH & SOL smart money fund...
                 </p>
@@ -35,10 +38,12 @@ const MarketSubChild = () => {
                 <button className="watchlistButton">
                   <img src={iconStar} alt="iconstar" /> Watchlist
                 </button>
+
                 <button className="cloneButton">
                   <img src={IconCopy} alt="iconcopy" /> Clone it
                 </button>
               </div>
+
             </div>
 
             <div className="rightSideManager">
@@ -66,7 +71,7 @@ const MarketSubChild = () => {
             <hr
               style={{
                 color: "#595757",
-                height: "2px",
+                height: "1px",
                 border: "1px solid #595757",
               }}
             />
@@ -97,7 +102,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>50.8%</span>
                 </div>
               </div>
 
