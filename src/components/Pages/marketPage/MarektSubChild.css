@@ -281,7 +281,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 42%;
+    left: 44%;
     transform: translateX(-50%);
 }
 
@@ -338,8 +338,8 @@
 
     .watchlistButton,
     .cloneButton {
-        padding: 6px 4px;
-        font-size: 14px;
+        padding: 6px 8px;
+        font-size: 12px;
     }
 
     .leftImageSection {
@@ -352,8 +352,8 @@
     }
 
     .rightSideTitle {
-        font-size: 20px;
-    }
+        font-size: 14px;
+        font-weight: 800;    }
 
     .managerImage {
         width: 35px;
@@ -392,7 +392,7 @@
     }
 
     .rightSideTitle {
-        font-size: 18px;
+        font-size: 10px;
     }
 
     .managerImage {

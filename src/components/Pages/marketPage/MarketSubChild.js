@@ -102,7 +102,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>50.8%</span>
+                  <span>71,68%</span>
                 </div>
               </div>
 
