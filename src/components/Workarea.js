@@ -16,6 +16,7 @@ import gr from "../assets/images/gr.png";
 import { usePrivy } from "@privy-io/react-auth";
 import PerformanceChart from "./charts/PerformanceChart";
 import {formatAddress} from '../utils/AddressFormat'
+import OverviewSection from "./Pages/marketPage/OverviewSection";
 
 
 export default function Workarea() {
@@ -130,15 +131,13 @@ export default function Workarea() {
             
             <div className="col-md-12 mb-4">
               <div className="chartmain">
-                {/* <h4 className='text-black mb-4'>Performance Graph</h4>
-                  <img className="w-100" src={gr}></img>
 
-                 */}
 
                 <PerformanceChart chartSize={chartSize} />
 
               </div>
             </div>
+
           </div>
 
         </div>

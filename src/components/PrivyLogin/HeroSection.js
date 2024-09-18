@@ -1,12 +1,14 @@
 import React from "react";
 import "./HeroSection.css";
+import videoSrc from "../../assets/images/1050.mp4";
+
 
 const HeroSection = () => {
   return (
     <div className="hero-section">
       <video className="hero-video" autoPlay muted loop>
         <source
-          src="https://d33vw3iu5hs0zi.cloudfront.net/media/exness_c76dfeb683.webm"
+          src={videoSrc}
           type="video/webm"
         />
         Your browser does not support the video tag.

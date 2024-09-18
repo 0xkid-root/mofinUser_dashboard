@@ -2,21 +2,19 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 20px;
     border: 1px solid #e0e0e0;
 }
 
-.leftImageSection {
+/* .leftImageSection {
     flex-shrink: 0;
     max-width: 300px;
     height: 325px;
-}
-
-.rightSideManager {
-    display: flex;
-    align-items: center;
 }
 
 .assetImage {
@@ -25,7 +23,61 @@
     border-radius: 25px;
     object-fit: cover;
     margin-top: 3px;
+} */
+.leftImageSection {
+    flex-shrink: 0;
+    width: 350px;
+    height: 375px;
+    margin: 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
 }
+
+/* Asset Image */
+.assetImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+.rightSideManager {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .managerImage {
+    border-radius:4px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .managerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+
+
+.managerDescription {
+    font-size: 12px;
+    color: #000;
+    font-family: Roboto;
+    margin-top: 5px;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+
 
 .rightSideSection {
     flex: 1;
@@ -41,6 +93,7 @@
     font-weight: bold;
     margin-bottom: 8px;
     font-family: 'Roboto';
+    height: fit-content;
 }
 
 .rightSideAction {
@@ -55,62 +108,85 @@
 }
 
 .watchlistButton {
+    display: flex;
+    text-wrap: nowrap;
     background-color: #000;
     color: #fff;
     border: none;
-    padding: 8px 16px;
+    padding: 6px 10px;
     border-radius: 4px;
     margin-right: 8px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-family: 'Roboto';
+    gap: 5px;
 }
 
 .cloneButton {
+    display: flex;
+    text-wrap: nowrap;
     background-color: #ff0;
     color: #000;
     border: none;
-    padding: 8px 16px;
+    padding: 6px 10px;
     border-radius: 4px;
+    height: fit-content;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    gap: 5px;
 }
-
-.managerImage {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
+.managerNameContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Roboto';
 }
-
-
+.yellowTick {
+    width: 20px;
+    height: 20px;
+}
 
 .managerName {
     font-weight: bold;
     font-size: 14px;
 }
 
-.managerDescription {
-    font-size: 12px;
-    color: #777;
-    font-family: Roboto;
-
+.tickButton {
+    background-color: yellow;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.fundallocation {
+.fundallocationAsset {
     display: flex;
     margin-top: 16px;
     background: rgba(255, 255, 255, 1);
     width: 100%;
     border-radius: 16px;
     /* padding: 30px; */
-    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 25px;
+    padding-top: 3px;
     justify-content: space-between;
     position: relative;
 }
 
 .assetColumn {
-    width: 45% !important;
+    width: 40% !important;
     margin-left: -27px;
+    margin-right: 60px;
 }
 
 .fund_title {
@@ -121,17 +197,18 @@
     margin-bottom: 25px;
 }
 
-.findlist {
+.findlistAsset {
     display: block;
     margin-bottom: 10px;
+    margin-top: 18px;
 }
 
-.findlist .fundimg {
+.findlistAsset .fundimgAsset {
     display: flex;
     align-items: center;
 }
 
-.findlist .fundimg .imge1 {
+.findlistAsset .fundimgAsset .imge1Asset {
     width: 32px;
     height: 32px;
     display: flex;
@@ -143,42 +220,45 @@
     background: #e0e0e0;
 }
 
-.findlist .fundimg .imge1 img {
+.findlistAsset .fundimgAsset .imge1Asset img {
     width: 80%;
     height: auto;
     max-height: 100%;
     border-radius: 50%;
 }
 
-.findlist .fundimg .name {
+.findlistAsset .fundimgAsset .nameAsset {
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
+    font-family: 'Roboto';
+
 }
 
-.findlist .fundimg .amount {
+.findlistAsset .fundimgAsset .amount {
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
     font-weight: 600;
     margin-left: auto;
+
 }
 
-.findlist .progressbar {
+.findlistAsset .progressbar {
     margin-top: 12px;
     position: relative;
 }
 
-.findlist .progressbar .progress {
+.findlistAsset .progressbar .progress {
     background: #353535;
     width: calc(100% - 55px);
     height: 8px;
 }
 
-.findlist .progressbar .progress .progress-bar {
+.findlistAsset .progressbar .progress .progress-bar {
     background: #e0e0e0;
 }
 
-.findlist .progressbar span {
+.findlistAsset .progressbar span {
     font-size: 14px;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
@@ -195,7 +275,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 48%;
+    left: 43%;
     transform: translateX(-50%);
 }
 
@@ -212,6 +292,9 @@
         gap: 10px;
     }
 
+    .watchlistButton {
+        padding: 1px 10px;
+    }
     .leftImageSection {
         max-width: 100%;
         height: auto;
@@ -221,14 +304,18 @@
         margin-left: 0;
     }
 
-    .fundallocation {
+    .fundallocationAsset {
         flex-direction: column;
         padding: 20px;
     }
 
     .assetColumn {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0;
+    }
+    .leftImageSection {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hr-container {
@@ -266,18 +353,19 @@
         height: 35px;
     }
 
-    .findlist .fundimg .imge1 {
+    .findlistAsset .fundimgAsset .imge1Asset {
         width: 28px;
         height: 28px;
     }
 
-    .findlist .fundimg .name,
-    .findlist .fundimg .amount {
+    .findlistAsset .fundimgAsset .nameAsset,
+    .findlistAsset .fundimgAsset .amount {
         font-size: 14px;
     }
 
-    .fundallocation {
+    .fundallocationAsset {
         padding: 15px;
+        width: auto;
     }
 }
 
@@ -305,17 +393,17 @@
         height: 30px;
     }
 
-    .fundallocation {
+    .fundallocationAsset {
         padding: 10px;
     }
 
-    .findlist .fundimg .imge1 {
+    .findlistAsset .fundimgAsset .imge1Asset {
         width: 24px;
         height: 24px;
     }
 
-    .findlist .fundimg .name,
-    .findlist .fundimg .amount {
+    .findlistAsset .fundimgAsset .nameAsset,
+    .findlistAsset .fundimgAsset .amount {
         font-size: 12px;
     }
 }
