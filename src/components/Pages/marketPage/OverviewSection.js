@@ -12,6 +12,10 @@ import {
   Legend,
 } from "chart.js";
 
+import TraderSection from "./TraderSection";
+import ActivitySection from "./ActivitySection";
+import HolderSection from "./HolderSection";
+
 // Register chart.js components
 ChartJS.register(
   CategoryScale,
@@ -71,8 +75,8 @@ const options = {
 };
 
 const OverviewSection = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const [activeRange, setActiveRange] = useState("1W");
+  const [activeTab, setActiveTab] = useState(0); 
+  const [activeRange, setActiveRange] = useState("1W"); 
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
@@ -80,6 +84,23 @@ const OverviewSection = () => {
 
   const handleRangeChange = (range) => {
     setActiveRange(range);
+  };
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case 1:
+        return <TraderSection />;
+      case 2:
+        return <ActivitySection />;
+      case 3:
+        return <HolderSection />;
+      default:
+        return (
+          <Box mt={3} sx={{ width: "100%", height: "400px", position: "relative" }}>
+            <Line data={data} options={options} />
+          </Box>
+        );
+    }
   };
 
   return (
@@ -92,31 +113,30 @@ const OverviewSection = () => {
       }}
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">
-      <Tabs
-      value={activeTab}
-      onChange={handleTabChange}
-      aria-label="overview tabs"
-      sx={{
-        '& .MuiTab-root': {
-          color: 'black',
-          fontFamily: 'Roboto',
-          fontWeight: 'semibold',
-        },
-        '& .Mui-selected': {
-          color: 'black !important',
-          fontWeight: 'bold',
-        },
-        '& .MuiTabs-indicator': {
-          backgroundColor: 'black',
-        },
-      }}
-    >
-      <Tab label="Overview" />
-      <Tab label="Trades" />
-      <Tab label="Activity" />
-      <Tab label="Holders" />
-    </Tabs>
-    
+        <Tabs
+          value={activeTab}
+          onChange={handleTabChange}
+          aria-label="overview tabs"
+          sx={{
+            "& .MuiTab-root": {
+              color: "black",
+              fontFamily: "Roboto",
+              fontWeight: "semibold",
+            },
+            "& .Mui-selected": {
+              color: "black !important",
+              fontWeight: "bold",
+            },
+            "& .MuiTabs-indicator": {
+              backgroundColor: "black",
+            },
+          }}
+        >
+          <Tab label="Overview" />
+          <Tab label="Trades" />
+          <Tab label="Activity" />
+          <Tab label="Holders" />
+        </Tabs>
 
         <Box display="flex" alignItems="center">
           <ButtonGroup>
@@ -127,7 +147,7 @@ const OverviewSection = () => {
                 onClick={() => handleRangeChange(range)}
                 sx={{
                   ml: 1,
-                  backgroundColor: activeRange === range ? "yellow" : "black",
+                  backgroundColor: activeRange === range ? "#FFDE02" : "black",
                   color: activeRange === range ? "black" : "white",
                   borderRadius: "10px",
                   border: "none",
@@ -138,18 +158,16 @@ const OverviewSection = () => {
             ))}
           </ButtonGroup>
         </Box>
+
       </Box>
       <hr
         style={{
           color: "#595757",
           height: "1px",
           border: "1px solid #595757",
-        }}
-      />
+        }}/>
 
-      <Box mt={3} sx={{ width: '100%', height: '400px', position: 'relative' }}>
-        <Line data={data} options={options} />
-      </Box>
+      {renderContent()}
     </Box>
   );
 };
