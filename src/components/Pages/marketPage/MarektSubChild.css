@@ -71,14 +71,6 @@
     margin-top: 10px;
   }
   
-
-
-
-
-
-
-
-
 .rightSideSection {
     flex: 1;
     margin-left: 20px;
@@ -89,10 +81,10 @@
 }
 
 .rightSideTitle {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 20px !important;
+    font-weight: bold !important;
     margin-bottom: 8px;
-    font-family: 'Roboto';
+    font-family: 'Roboto' !important;
     height: fit-content;
     flex-wrap: nowrap;
 }
