@@ -17,6 +17,7 @@ import { usePrivy } from "@privy-io/react-auth";
 import PerformanceChart from "./charts/PerformanceChart";
 import {formatAddress} from '../utils/AddressFormat'
 import OverviewSection from "./Pages/marketPage/OverviewSection";
+import { Link } from "react-router-dom";
 
 
 export default function Workarea() {
@@ -97,14 +98,14 @@ export default function Workarea() {
           <div className="row">
 
             <div className="col-sm-4 mb-4" >
+            <Link to='/marketchild'>
               <div className="card cardcustom" style={{border:'none',background:'none'}}>
                 <div className="card-body p-0" style={{border:'none'}}>
                   <img className="w-100" src={Anon}></img>
                 </div>
-                {/*                <div className='card-footer'>
-                    Test data by <span>Anon</span>
-                </div> */}
+
               </div>
+              </Link>
             </div>
 
             <div className="col-sm-4 mb-4">
