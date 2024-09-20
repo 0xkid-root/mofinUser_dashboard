@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.60de20ae.css",
-    "main.js": "/static/js/main.c0b97422.js",
+    "main.css": "/static/css/main.8413d4f7.css",
+    "main.js": "/static/js/main.6d744034.js",
     "static/js/728.882089c3.chunk.js": "/static/js/728.882089c3.chunk.js",
     "static/js/306.4c1cfaa5.chunk.js": "/static/js/306.4c1cfaa5.chunk.js",
     "static/js/80.84a38c87.chunk.js": "/static/js/80.84a38c87.chunk.js",
@@ -19,13 +19,24 @@
     "static/media/asset1.png": "/static/media/asset1.9934227da3dfb3549008.png",
     "static/media/NFT3.png": "/static/media/NFT3.87662439b3e2a8c4e345.png",
     "static/media/asset.png": "/static/media/asset.38e15f6e5bf32bb7e1e0.png",
+    "static/media/marketNFT2.png": "/static/media/marketNFT2.01952e0a38215ad706a2.png",
     "static/media/profileImage.png": "/static/media/profileImage.d1da120a4509406960ad.png",
+    "static/media/marketNFT5.png": "/static/media/marketNFT5.d25f8521b7cbb4859bfe.png",
+    "static/media/marketNFT1.png": "/static/media/marketNFT1.4cb152b08d9449405ce8.png",
+    "static/media/marketNFT3.png": "/static/media/marketNFT3.52c4769289f690e52e1a.png",
     "static/media/profileSection.svg": "/static/media/profileSection.47c987f4a3fd6e9081e0684d9ce67de8.svg",
     "static/media/socal.png": "/static/media/socal.516737f68f88093631fa.png",
     "static/media/gr.png": "/static/media/gr.42920b610c158ae2b7db.png",
+    "static/media/marketNFT6.png": "/static/media/marketNFT6.73da6827aa021ad2b9df.png",
+    "static/media/marketNFT4.png": "/static/media/marketNFT4.5f360e290f8aea65f3ac.png",
+    "static/media/sofinNFt.svg": "/static/media/sofinNFt.fbd4c2a1d7ab76132a454c9355687be6.svg",
     "static/media/message.svg": "/static/media/message.41a124889b225ae3f881c7df7aca5178.svg",
     "static/media/logo_dark.svg": "/static/media/logo_dark.d9a271e888682f3dc95b30de29c61ee3.svg",
+    "static/media/uniswap.svg": "/static/media/uniswap.9f9972fd06762ca4aaa53f7e059c4511.svg",
+    "static/media/matic.svg": "/static/media/matic.7f64eabd8d3271e368aaec91b02ef9df.svg",
+    "static/media/bitcoin.svg": "/static/media/bitcoin.62a6d082fd8f602ddf6ee7433e1462d8.svg",
     "static/media/verifiedAccount.svg": "/static/media/verifiedAccount.f9563b9258d868856a9a2073d91d3be7.svg",
+    "static/media/binance.svg": "/static/media/binance.9a1a8cc00fd737949bf2baeac2ab9919.svg",
     "static/media/setting.svg": "/static/media/setting.5512fb079df26c3e7f2c2c8829f71392.svg",
     "static/media/notification.svg": "/static/media/notification.d3bc4c9759284510ed39cd10591af99f.svg",
     "static/media/donate.svg": "/static/media/donate.f283f0f8b48b0f19cf7aab475e6b489c.svg",
@@ -34,6 +45,7 @@
     "static/media/Group.svg": "/static/media/Group.058b0af011decb764836a021e29cf031.svg",
     "static/media/iconsStar.svg": "/static/media/iconsStar.df1d58b3d80d65b2a4f26113f2a9968b.svg",
     "static/media/iconsCopy.svg": "/static/media/iconsCopy.c9ce981523e8e0e472cf6650ad69325e.svg",
+    "static/media/jupiter.svg": "/static/media/jupiter.a95d07fb5ce00afc5cbe1d59e1457bc0.svg",
     "static/media/logout.svg": "/static/media/logout.3592c4644b0ff5a6e8899b21271bc452.svg",
     "static/media/Logo-mob.svg": "/static/media/Logo-mob.403ea0578cb1373457a38a55a1033d84.svg",
     "static/media/dasboard.svg": "/static/media/dasboard.01695432549dedee8669539a59d83a9f.svg",
@@ -41,8 +53,8 @@
     "static/media/user.svg": "/static/media/user.fa56854b91d334b3d1f116a734093f8f.svg",
     "index.html": "/index.html",
     "static/media/bar.svg": "/static/media/bar.3484941e745d6fc613af.svg",
-    "main.60de20ae.css.map": "/static/css/main.60de20ae.css.map",
-    "main.c0b97422.js.map": "/static/js/main.c0b97422.js.map",
+    "main.8413d4f7.css.map": "/static/css/main.8413d4f7.css.map",
+    "main.6d744034.js.map": "/static/js/main.6d744034.js.map",
     "728.882089c3.chunk.js.map": "/static/js/728.882089c3.chunk.js.map",
     "306.4c1cfaa5.chunk.js.map": "/static/js/306.4c1cfaa5.chunk.js.map",
     "80.84a38c87.chunk.js.map": "/static/js/80.84a38c87.chunk.js.map",
@@ -57,7 +69,7 @@
     "126.291eb9c1.chunk.js.map": "/static/js/126.291eb9c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60de20ae.css",
-    "static/js/main.c0b97422.js"
+    "static/css/main.8413d4f7.css",
+    "static/js/main.6d744034.js"
   ]
 }

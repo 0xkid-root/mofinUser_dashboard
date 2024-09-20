@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Box, Tabs, Tab, ButtonGroup, Button } from "@mui/material";
+import { Box, Tabs, Tab, ButtonGroup, Button, IconButton, Menu, MenuItem, useMediaQuery } from "@mui/material";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -17,30 +18,10 @@ import ActivitySection from "./ActivitySection";
 import HolderSection from "./HolderSection";
 
 // Register chart.js components
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const data = {
-  labels: [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-  ],
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
   datasets: [
     {
       label: "Price",
@@ -75,8 +56,11 @@ const options = {
 };
 
 const OverviewSection = () => {
-  const [activeTab, setActiveTab] = useState(0); 
-  const [activeRange, setActiveRange] = useState("1W"); 
+  const [activeTab, setActiveTab] = useState(0);
+  const [activeRange, setActiveRange] = useState("1W");
+  const [anchorEl, setAnchorEl] = useState(null);
+  
+  const isMobile = useMediaQuery("(max-width: 751px)");
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
@@ -84,6 +68,15 @@ const OverviewSection = () => {
 
   const handleRangeChange = (range) => {
     setActiveRange(range);
+    handleMenuClose();
+  };
+
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
   };
 
   const renderContent = () => {
@@ -139,33 +132,56 @@ const OverviewSection = () => {
         </Tabs>
 
         <Box display="flex" alignItems="center">
-          <ButtonGroup>
-            {["1W", "1M", "3M", "1Y", "YTD"].map((range) => (
-              <Button
-                key={range}
-                variant={activeRange === range ? "contained" : "outlined"}
-                onClick={() => handleRangeChange(range)}
-                sx={{
-                  ml: 1,
-                  backgroundColor: activeRange === range ? "#FFDE02" : "black",
-                  color: activeRange === range ? "black" : "white",
-                  borderRadius: "10px",
-                  border: "none",
-                }}
+          {isMobile ? (
+            <>
+              <IconButton onClick={handleMenuClick}>
+                <MoreVertIcon />
+              </IconButton>
+              <Menu
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl)}
+                onClose={handleMenuClose}
               >
-                {range}
-              </Button>
-            ))}
-          </ButtonGroup>
+                {["1W", "1M", "3M", "1Y", "YTD"].map((range) => (
+                  <MenuItem
+                    key={range}
+                    onClick={() => handleRangeChange(range)}
+                    selected={activeRange === range}
+                  >
+                    {range}
+                  </MenuItem>
+                ))}
+              </Menu>
+            </>
+          ) : (
+            <ButtonGroup>
+              {["1W", "1M", "3M", "1Y", "YTD"].map((range) => (
+                <Button
+                  key={range}
+                  variant={activeRange === range ? "contained" : "outlined"}
+                  onClick={() => handleRangeChange(range)}
+                  sx={{
+                    ml: 1,
+                    backgroundColor: activeRange === range ? "#FFDE02" : "black",
+                    color: activeRange === range ? "black" : "white",
+                    borderRadius: "10px",
+                    border: "none",
+                  }}
+                >
+                  {range}
+                </Button>
+              ))}
+            </ButtonGroup>
+          )}
         </Box>
-
       </Box>
       <hr
         style={{
           color: "#595757",
           height: "1px",
           border: "1px solid #595757",
-        }}/>
+        }}
+      />
 
       {renderContent()}
     </Box>

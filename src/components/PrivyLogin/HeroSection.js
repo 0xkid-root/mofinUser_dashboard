@@ -6,7 +6,7 @@ import videoSrc from "../../assets/images/1050.mp4";
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <video className="hero-video" autoPlay muted loop>
+      <video className="hero-video" autoPlay muted loop playsInline>
         <source
           src={videoSrc}
           type="video/webm"
