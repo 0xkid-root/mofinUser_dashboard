@@ -19,7 +19,7 @@ import verfiedImage from "../../../assets/images/verifiedAccount.svg";
 import sofinProfileImage from "../../../assets/images/sofinNFt.svg";
 import marketPro from "../../../assets/images/profileSection.svg";
 import FilterImage from "../../../assets/images/filterSet.svg";
-import performingImage from "../../../assets/images/performingImage.png";
+import performingImage from "../../../assets/images/performeIma.svg";
 
 const folioData = [
   {
