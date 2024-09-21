@@ -85,7 +85,7 @@ const MarketSection = () => {
   const [activeTab, setActiveTab] = useState("SPOT");
 
   const handleFunction =()=>{
-    // navigate('/marketchild')
+    navigate('/marketchild')
   }
 
   return (

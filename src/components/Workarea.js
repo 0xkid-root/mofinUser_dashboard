@@ -68,7 +68,7 @@ export default function Workarea() {
               </div>
               <div className="valume">
                 <p>Total Value</p>
-                <h1>$ 4,800</h1>
+                <h1>$ 6,500</h1>
               </div>
             </div>
 
@@ -78,7 +78,7 @@ export default function Workarea() {
               </div>
               <div className="valume">
                 <p>Total Invested</p>
-                <h1>$ 4,000</h1>
+                <h1>$ 5,000</h1>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ export default function Workarea() {
               </div>
               <div className="valume">
                 <p>ROI</p>
-                <h1>+ 20%</h1>
+                <h1>+ 30%</h1>
               </div>
             </div>
 
@@ -157,7 +157,7 @@ export default function Workarea() {
                 </div>
 
                 <div className="name">Bitcoin</div>
-                <div className="amount ms-auto">$2,000</div>
+                <div className="amount ms-auto">$2,500</div>
               </div>
 
               <div className="progressbar">
@@ -171,7 +171,7 @@ export default function Workarea() {
                 >
                   <div className="progress-bar" style={{ width: "25%" }}></div>
                 </div>
-                <span>71,68%</span>
+                <span>38.50%</span>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export default function Workarea() {
                   <img src={ethereum}></img>
                 </div>
                 <div className="name">Ethereum</div>
-                <div className="amount ms-auto">$1,000</div>
+                <div className="amount ms-auto">$1,500</div>
               </div>
               <div className="progressbar">
                 <div
@@ -195,7 +195,7 @@ export default function Workarea() {
                 >
                   <div className="progress-bar" style={{ width: "25%" }}></div>
                 </div>
-                <span>71,68%</span>
+                <span>23.00%</span>
               </div>
             </div>
 
@@ -218,7 +218,7 @@ export default function Workarea() {
                 >
                   <div className="progress-bar" style={{ width: "25%" }}></div>
                 </div>
-                <span>71,68%</span>
+                <span>7.70%</span>
               </div>
             </div>
 
@@ -241,7 +241,7 @@ export default function Workarea() {
                 >
                   <div className="progress-bar" style={{ width: "25%" }}></div>
                 </div>
-                <span>71,68%</span>
+                <span>7.70%</span>
               </div>
             </div>
 
@@ -264,7 +264,7 @@ export default function Workarea() {
                 >
                   <div className="progress-bar" style={{ width: "45%" }}></div>
                 </div>
-                <span>718%</span>
+                <span>7.70%</span>
               </div>
             </div>
 

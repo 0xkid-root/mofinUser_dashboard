@@ -85,7 +85,7 @@ const MarketSubChild = () => {
                     <img src={bitcoin} alt="bitcoin" />
                   </div>
                   <div className="nameAsset">Bitcoin</div>
-                  <div className="amount ms-auto">$2,000</div>
+                  <div className="amount ms-auto">$2,500</div>
                 </div>
 
                 <div className="progressbar">
@@ -102,7 +102,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>38.50%</span>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@ const MarketSubChild = () => {
                     <img src={ethereum} alt="ethereum" />
                   </div>
                   <div className="nameAsset">Ethereum</div>
-                  <div className="amount ms-auto">$1,000</div>
+                  <div className="amount ms-auto">$1,500</div>
                 </div>
                 <div className="progressbar">
                   <div
@@ -128,7 +128,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>23.00%</span>
                 </div>
               </div>
 
@@ -154,7 +154,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>7.70%</span>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ const MarketSubChild = () => {
                       style={{ width: "25%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>7.70%</span>
                 </div>
               </div>
 
@@ -212,15 +212,15 @@ const MarketSubChild = () => {
                       style={{ width: "45%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>7.70%</span>
                 </div>
               </div>
 
               <div className="findlistAsset">
                 <div className="fundimgAsset">
                   <div className="imge1Asset">🟠</div>
-                  <div className="nameAsset">other</div>
-                  <div className="amount ms-auto">$1000</div>
+                  <div className="nameAsset">Others</div>
+                  <div className="amount ms-auto">$0</div>
                 </div>
                 <div className="progressbar">
                   <div
@@ -236,7 +236,7 @@ const MarketSubChild = () => {
                       style={{ width: "45%" }}
                     ></div>
                   </div>
-                  <span>71,68%</span>
+                  <span>0.00%</span>
                 </div>
               </div>
             </div>
