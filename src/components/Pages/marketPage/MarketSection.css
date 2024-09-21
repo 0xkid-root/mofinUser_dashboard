@@ -70,7 +70,7 @@
 }
 
 .market-tab:hover {
-  color: #fbb034;
+  color: #FFDE02;
 }
 
 .market-tab.active::after {
@@ -80,7 +80,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background-color: #fbb034;
+  background-color: #FFDE02;
   border-radius: 3px;
 }
 
@@ -101,9 +101,14 @@
   margin-top: 8px;
 }
 
-.filter-image {
-  margin-left: 8px;
-}
+  .filter-image {
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+
 
 .market-header-right span {
   font-size: 14px;
@@ -182,7 +187,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #EEEEEE;
-  padding: 10px;
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -227,5 +232,8 @@
   .mainMarketContent {
     flex-direction: column;
     padding: 10px;
+  }
+  .market-header-left h2{
+    font-size: 14px;
   }
 }

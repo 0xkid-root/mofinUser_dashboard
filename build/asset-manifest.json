@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8413d4f7.css",
-    "main.js": "/static/js/main.2c6aad46.js",
+    "main.css": "/static/css/main.d0294eec.css",
+    "main.js": "/static/js/main.b7b75087.js",
     "static/js/728.882089c3.chunk.js": "/static/js/728.882089c3.chunk.js",
     "static/js/306.4c1cfaa5.chunk.js": "/static/js/306.4c1cfaa5.chunk.js",
     "static/js/80.84a38c87.chunk.js": "/static/js/80.84a38c87.chunk.js",
@@ -16,10 +16,14 @@
     "static/js/126.291eb9c1.chunk.js": "/static/js/126.291eb9c1.chunk.js",
     "static/media/1050.mp4": "/static/media/1050.0c7425ca1de0c09b5ba5.mp4",
     "static/media/asset2.png": "/static/media/asset2.a1332654f202555dc41f.png",
+    "static/media/banner_2.png": "/static/media/banner_2.e813f8b55f547670d36b.png",
     "static/media/asset1.png": "/static/media/asset1.9934227da3dfb3549008.png",
-    "static/media/NFT3.png": "/static/media/NFT3.87662439b3e2a8c4e345.png",
+    "static/media/banner_1.png": "/static/media/banner_1.44142742a520bb776ed5.png",
+    "static/media/traderImage.svg": "/static/media/traderImage.0939f444545393dd31cfeab3bd4df655.svg",
     "static/media/asset.png": "/static/media/asset.38e15f6e5bf32bb7e1e0.png",
+    "static/media/banner_3.png": "/static/media/banner_3.19f8f5c8ce046f4f2ae3.png",
     "static/media/marketNFT2.png": "/static/media/marketNFT2.01952e0a38215ad706a2.png",
+    "static/media/banner_4.png": "/static/media/banner_4.5a181e4387c48057cd8e.png",
     "static/media/profileImage.png": "/static/media/profileImage.d1da120a4509406960ad.png",
     "static/media/marketNFT5.png": "/static/media/marketNFT5.d25f8521b7cbb4859bfe.png",
     "static/media/marketNFT1.png": "/static/media/marketNFT1.4cb152b08d9449405ce8.png",
@@ -30,6 +34,7 @@
     "static/media/marketNFT6.png": "/static/media/marketNFT6.73da6827aa021ad2b9df.png",
     "static/media/marketNFT4.png": "/static/media/marketNFT4.5f360e290f8aea65f3ac.png",
     "static/media/sofinNFt.svg": "/static/media/sofinNFt.fbd4c2a1d7ab76132a454c9355687be6.svg",
+    "static/media/sofinSquareLogo.svg": "/static/media/sofinSquareLogo.2736ed57fff97638fe5e0ed0369d483d.svg",
     "static/media/message.svg": "/static/media/message.41a124889b225ae3f881c7df7aca5178.svg",
     "static/media/logo_dark.svg": "/static/media/logo_dark.d9a271e888682f3dc95b30de29c61ee3.svg",
     "static/media/uniswap.svg": "/static/media/uniswap.9f9972fd06762ca4aaa53f7e059c4511.svg",
@@ -43,6 +48,8 @@
     "static/media/protocols.svg": "/static/media/protocols.298d3f715a1cee9044405434642ddee6.svg",
     "static/media/WalletLoginIcon.svg": "/static/media/WalletLoginIcon.db90f8159ac4861522359ea83c42e494.svg",
     "static/media/Group.svg": "/static/media/Group.058b0af011decb764836a021e29cf031.svg",
+    "static/media/telegramImage.svg": "/static/media/telegramImage.aebcb29af99b745a3c186e6e3a744657.svg",
+    "static/media/twitterXImage.svg": "/static/media/twitterXImage.c49358660f112b76b087e652d707bf78.svg",
     "static/media/iconsStar.svg": "/static/media/iconsStar.df1d58b3d80d65b2a4f26113f2a9968b.svg",
     "static/media/iconsCopy.svg": "/static/media/iconsCopy.c9ce981523e8e0e472cf6650ad69325e.svg",
     "static/media/jupiter.svg": "/static/media/jupiter.a95d07fb5ce00afc5cbe1d59e1457bc0.svg",
@@ -55,8 +62,8 @@
     "static/media/user.svg": "/static/media/user.fa56854b91d334b3d1f116a734093f8f.svg",
     "index.html": "/index.html",
     "static/media/bar.svg": "/static/media/bar.3484941e745d6fc613af.svg",
-    "main.8413d4f7.css.map": "/static/css/main.8413d4f7.css.map",
-    "main.2c6aad46.js.map": "/static/js/main.2c6aad46.js.map",
+    "main.d0294eec.css.map": "/static/css/main.d0294eec.css.map",
+    "main.b7b75087.js.map": "/static/js/main.b7b75087.js.map",
     "728.882089c3.chunk.js.map": "/static/js/728.882089c3.chunk.js.map",
     "306.4c1cfaa5.chunk.js.map": "/static/js/306.4c1cfaa5.chunk.js.map",
     "80.84a38c87.chunk.js.map": "/static/js/80.84a38c87.chunk.js.map",
@@ -71,7 +78,7 @@
     "126.291eb9c1.chunk.js.map": "/static/js/126.291eb9c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8413d4f7.css",
-    "static/js/main.2c6aad46.js"
+    "static/css/main.d0294eec.css",
+    "static/js/main.b7b75087.js"
   ]
 }

@@ -18,8 +18,9 @@ import ethereum from "../../../assets/images/ethereum.png";
 import verfiedImage from "../../../assets/images/verifiedAccount.svg";
 import sofinProfileImage from "../../../assets/images/sofinNFt.svg";
 import marketPro from "../../../assets/images/profileSection.svg";
-import FilterImage from "../../../assets/images/filterSet.svg";
+import FilterImage from "../../../assets/images/filterSetting.png";
 import performingImage from "../../../assets/images/performeIma.svg";
+import TradersPerformance from "./TradersPerformance";
 
 const folioData = [
   {
@@ -170,6 +171,7 @@ const MarketSection = () => {
           ))}
         </div>
       </div>
+      <TradersPerformance />
     </div>
   );
 };

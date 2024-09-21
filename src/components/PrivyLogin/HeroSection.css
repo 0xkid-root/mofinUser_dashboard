@@ -1,6 +1,6 @@
 .hero-section {
   position: relative; 
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 20px;
   font-family: 'Roboto';
   /* font-family: 'sans-serif';
@@ -53,7 +53,7 @@
   background-color: #FFDE02;
   color: #000;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;

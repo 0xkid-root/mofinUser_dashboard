@@ -113,7 +113,7 @@ input::-ms-input-placeholder {
 
 .top-right-menu .search .input-group {
     height: 48px;
-    border-radius: 16px;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 1);
     min-width: 368px;
     border: none;
@@ -716,8 +716,8 @@ img {
     background: #f4eded6e;
     /* background: #f4eded; */
     top: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .mobs {

@@ -4,23 +4,27 @@ import anam from "../../assets/images/asset1.png";
 import anon from "../../assets/images/asset2.png";
 import nft1 from '../../assets/images/yb.png'
 import nft2 from '../../assets/images/by.png'
-import nft3 from '../../assets/images/NFT3.png';
+import banner1 from "../../assets/images/banner_1.png"
+import banner2 from "../../assets/images/banner_2.png"
+import banner3 from "../../assets/images/banner_3.png"
+import banner4 from "../../assets/images/banner_4.png"
+
 import './LoginCardSection.css';
 
 const LoginCardSection = () => {
   return (
     <div className="card-container">
       <div className="card-item">
-        <img className="card-image" src={nft1} alt="Image 1" />
+        <img className="card-image" src={banner1} alt="Image 1" />
       </div>
       <div className="card-item">
-        <img className="card-image" src={nft2} alt="Image 2" />
+        <img className="card-image" src={banner2} alt="Image 2" />
       </div>
       <div className="card-item">
-        <img className="card-image" src={nft1} alt="Image 3" />
+        <img className="card-image" src={banner3} alt="Image 3" />
       </div>
       <div className="card-item">
-      <img className="card-image" src={nft2} alt="Image 3" />
+      <img className="card-image" src={banner4} alt="Image 3" />
     </div>
     </div>
   );
