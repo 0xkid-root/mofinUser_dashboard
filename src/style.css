@@ -367,7 +367,7 @@ input::-ms-input-placeholder {
 }
 
 .sidemenu ul li a.active:hover img {
-    filter: invert(1); /* Keep the icon white when hovered */
+    filter: invert(1);
 }
 
 

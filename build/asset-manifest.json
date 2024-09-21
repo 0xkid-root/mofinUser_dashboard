@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0294eec.css",
-    "main.js": "/static/js/main.b7b75087.js",
+    "main.css": "/static/css/main.0db94737.css",
+    "main.js": "/static/js/main.1e5979d4.js",
     "static/js/728.882089c3.chunk.js": "/static/js/728.882089c3.chunk.js",
     "static/js/306.4c1cfaa5.chunk.js": "/static/js/306.4c1cfaa5.chunk.js",
     "static/js/80.84a38c87.chunk.js": "/static/js/80.84a38c87.chunk.js",
@@ -31,12 +31,12 @@
     "static/media/profileSection.svg": "/static/media/profileSection.47c987f4a3fd6e9081e0684d9ce67de8.svg",
     "static/media/socal.png": "/static/media/socal.516737f68f88093631fa.png",
     "static/media/gr.png": "/static/media/gr.42920b610c158ae2b7db.png",
+    "static/media/sofinYellowIcon.svg": "/static/media/sofinYellowIcon.d9a9a3a6d3605374edc7acb52079658a.svg",
     "static/media/marketNFT6.png": "/static/media/marketNFT6.73da6827aa021ad2b9df.png",
     "static/media/marketNFT4.png": "/static/media/marketNFT4.5f360e290f8aea65f3ac.png",
     "static/media/sofinNFt.svg": "/static/media/sofinNFt.fbd4c2a1d7ab76132a454c9355687be6.svg",
     "static/media/sofinSquareLogo.svg": "/static/media/sofinSquareLogo.2736ed57fff97638fe5e0ed0369d483d.svg",
     "static/media/message.svg": "/static/media/message.41a124889b225ae3f881c7df7aca5178.svg",
-    "static/media/logo_dark.svg": "/static/media/logo_dark.d9a271e888682f3dc95b30de29c61ee3.svg",
     "static/media/uniswap.svg": "/static/media/uniswap.9f9972fd06762ca4aaa53f7e059c4511.svg",
     "static/media/matic.svg": "/static/media/matic.7f64eabd8d3271e368aaec91b02ef9df.svg",
     "static/media/bitcoin.svg": "/static/media/bitcoin.62a6d082fd8f602ddf6ee7433e1462d8.svg",
@@ -54,7 +54,6 @@
     "static/media/iconsCopy.svg": "/static/media/iconsCopy.c9ce981523e8e0e472cf6650ad69325e.svg",
     "static/media/jupiter.svg": "/static/media/jupiter.a95d07fb5ce00afc5cbe1d59e1457bc0.svg",
     "static/media/logout.svg": "/static/media/logout.3592c4644b0ff5a6e8899b21271bc452.svg",
-    "static/media/Logo-mob.svg": "/static/media/Logo-mob.403ea0578cb1373457a38a55a1033d84.svg",
     "static/media/dasboard.svg": "/static/media/dasboard.01695432549dedee8669539a59d83a9f.svg",
     "static/media/trade.svg": "/static/media/trade.bd754239a03ef5675579067d6bf9575e.svg",
     "static/media/filterSet.svg": "/static/media/filterSet.2c357f98773475531b355bd1a518dd19.svg",
@@ -62,8 +61,8 @@
     "static/media/user.svg": "/static/media/user.fa56854b91d334b3d1f116a734093f8f.svg",
     "index.html": "/index.html",
     "static/media/bar.svg": "/static/media/bar.3484941e745d6fc613af.svg",
-    "main.d0294eec.css.map": "/static/css/main.d0294eec.css.map",
-    "main.b7b75087.js.map": "/static/js/main.b7b75087.js.map",
+    "main.0db94737.css.map": "/static/css/main.0db94737.css.map",
+    "main.1e5979d4.js.map": "/static/js/main.1e5979d4.js.map",
     "728.882089c3.chunk.js.map": "/static/js/728.882089c3.chunk.js.map",
     "306.4c1cfaa5.chunk.js.map": "/static/js/306.4c1cfaa5.chunk.js.map",
     "80.84a38c87.chunk.js.map": "/static/js/80.84a38c87.chunk.js.map",
@@ -78,7 +77,7 @@
     "126.291eb9c1.chunk.js.map": "/static/js/126.291eb9c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0294eec.css",
-    "static/js/main.b7b75087.js"
+    "static/css/main.0db94737.css",
+    "static/js/main.1e5979d4.js"
   ]
 }

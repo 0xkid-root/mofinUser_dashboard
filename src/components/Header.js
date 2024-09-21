@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../assets/images/logo_dark.svg";
+import Logo from "../assets/images/sofinYellowIcon.svg";
 import noti from "../assets/images/notification.svg";
 import mass from "../assets/images/message.svg";
 import userImage from "../assets/images/user.png";
 import search from "../assets/images/search.png";
-import Logomob from "../assets/images/Logo-mob.svg";
+import Logomob from "../assets/images/sofin_s.png";
 import { usePrivy } from "@privy-io/react-auth";
 
 export default function Header() {

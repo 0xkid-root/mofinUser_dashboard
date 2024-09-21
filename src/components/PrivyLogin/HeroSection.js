@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroSection.css";
 import videoSrc from "../../assets/images/1050.mp4";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -20,8 +21,12 @@ const HeroSection = () => {
           liquid trading and investment strategies with instant secondary market
           access.
         </p>
-        <button className="hero-button">Get Started</button>
-        <button className="hero-button demo-button">Try For Demo</button>
+        <Link to="https://t.me/sofinapp" target="_blank">
+          <button className="hero-button">Say Hello!</button>
+        </Link>
+        <Link to="https://bit.ly/4etjV40" target="_blank">
+          <button className="hero-button demo-button">Join Waitlist</button>{" "}
+        </Link>
       </div>
     </div>
   );

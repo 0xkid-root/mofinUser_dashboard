@@ -21,6 +21,7 @@ import marketPro from "../../../assets/images/profileSection.svg";
 import FilterImage from "../../../assets/images/filterSetting.png";
 import performingImage from "../../../assets/images/performeIma.svg";
 import TradersPerformance from "./TradersPerformance";
+import { Link ,useNavigate} from "react-router-dom";
 
 const folioData = [
   {
@@ -80,7 +81,12 @@ const folioData = [
 ];
 
 const MarketSection = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("SPOT");
+
+  const handleFunction =()=>{
+    // navigate('/marketchild')
+  }
 
   return (
     <div className="main-container">
@@ -121,7 +127,8 @@ const MarketSection = () => {
       <div className="mainMarketContent">
         <div className="folio-container">
           {folioData.map((folio, index) => (
-            <div key={index} className="folio-card">
+
+            <div key={index} className="folio-card" onClick={handleFunction}>
               <div className="folio-image">
                 <img src={folio.image} alt={folio.name} />
               </div>
@@ -168,6 +175,8 @@ const MarketSection = () => {
                 </div>
               </div>
             </div>
+
+
           ))}
         </div>
       </div>
