@@ -137,8 +137,60 @@
     height: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .traders-grid {
-        grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
     }
-}
+  
+    .performance-header-left h2 {
+      font-size: 22px;
+    }
+  
+    .mainMarketPerformance {
+      padding: 15px;
+    }
+  }
+  
+  /* Media Query for mobile screens */
+  @media (max-width: 768px) {
+    .traders-grid {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+  
+    .mainMarketPerformance {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .performance-header-left h2 {
+      font-size: 18px;
+    }
+  
+    .trader-card {
+      height: auto;
+    }
+  
+    .trader-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .trader-image {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .trader-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trader-info p {
+      text-align: center;
+    }
+  }
+  
