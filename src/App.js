@@ -24,63 +24,63 @@ import LoansSection from "./components/Pages/LoansSection";
 import ProfileSection from "./components/Pages/ProfileSection";
 import LoadingComponent from "./components/LoadingPage/LoadingComponent";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
-import { users } from "./UserRoles";
-import SmartAccountModal from "./ModelComponent/SmartAccountModal";
 
+import { CheckWhitelistStatus } from "./contract/BlockchainIntreaction";
 
 function App() {
   const { ready, authenticated, user } = usePrivy();
   const navigate = useNavigate();
   const location = useLocation();
   const [isWhitelisted, setIsWhitelisted] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [isModalShown, setIsModalShown] = useState(false);
-  const [loading, setLoading] = useState(true); // Loading state to handle transitions
+  const [loading, setLoading] = useState(true);
 
+  const handleAsyncCheckWhiteList = async (userAddress) => {
+    try {
+      const result = await CheckWhitelistStatus(userAddress); 
+      console.log("Whitelist check result:", result);
+      return result;
+    } catch (error) {
+      console.log("Error checking whitelist status:", error);
+      return false;
+    }
+  };
   useEffect(() => {
-    if (ready) {
-      if (authenticated && user?.wallet?.address) {
-        const currentUser = users.find(
-          (u) =>
-            u?.address?.toLowerCase() === user?.wallet?.address?.toLowerCase()
-        );
+    const checkAuthenticationAndWhitelist = async () => {
+      if (ready) {
+        if (authenticated) {
+          const userAddress = user?.wallet?.address;
+          console.log("User address:", userAddress);
 
-        if (currentUser && currentUser.isWhitelist === "true") {
-          setIsWhitelisted(true);
-          if (location.pathname === "/" || location.pathname === "/welcome") {
-            setLoading(false); // Set loading to false before navigating
-            navigate("/user", { replace: true });
-          }
+          if (userAddress) {
+            const whitelistStatus = await handleAsyncCheckWhiteList(userAddress);
+            setIsWhitelisted(whitelistStatus); 
 
-          if (
-            location.pathname === "/user" &&
-            currentUser.isSmartAccount === "false" &&
-            !isModalShown
-          ) {
-            setTimeout(() => {
-              setShowModal(true);
-              setIsModalShown(true);
-            }, 4000);
+            if (whitelistStatus) {
+              if (location.pathname === "/" || location.pathname === "/welcome") {
+                setLoading(false);
+                navigate("/user", { replace: true }); 
+              }
+            } else {
+              setLoading(false);
+              navigate("/welcome", { replace: true });
+            }
           }
         } else {
           setIsWhitelisted(false);
-          setLoading(false); // Ensure loading is false before navigating
-          navigate("/welcome", { replace: true });
+          if (location.pathname === "/welcome" && location.pathname !== "/") {
+            setLoading(false);
+            navigate("/", { replace: true });
+          }
         }
-      } else {
-        setIsWhitelisted(false);
-        if (location.pathname === "/welcome" && location.pathname !== "/") {
-          setLoading(false);
-          navigate("/", { replace: true });
-        }
+        setLoading(false);
       }
-      setLoading(false); // Ensure loading is turned off once checks are done
-    }
-  }, [ready, authenticated, user, navigate, location.pathname, isModalShown]);
+    };
+
+    checkAuthenticationAndWhitelist(); 
+  }, [ready, authenticated, user, navigate, location.pathname]);
 
   const showParticles = location.pathname !== "/";
 
-  // Show loading screen until authentication and whitelist status are fully checked
   if (loading || !ready) {
     return (
       <div
@@ -189,12 +189,7 @@ function App() {
           </>
         )}
       </Routes>
-      <SmartAccountModal
-        show={showModal}
-        onClose={() => setShowModal(false)}
-        title="Smart Account"
-        content="Your account type is not supported."
-      />
+     
     </React.Fragment>
   );
 }

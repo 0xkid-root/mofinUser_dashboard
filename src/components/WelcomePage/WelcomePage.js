@@ -12,7 +12,7 @@ import sofinYellow from "../../assets/images/sofinYellowIcon.svg"
 const WelcomePage = () => {
   const { user, logout } = usePrivy();
   const navigate = useNavigate();
-  console.log("user address is here:", user?.wallet?.address);
+  // console.log("user address is here:", user?.wallet?.address);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(user?.wallet?.address);
